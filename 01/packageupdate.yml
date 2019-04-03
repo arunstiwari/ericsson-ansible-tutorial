@@ -1,0 +1,13 @@
+---
+  - name: Updating Multiple Packages
+    hosts: localhost
+    connection: local
+    become: yes
+
+    tasks:
+    - yum: 
+        name:
+          - net-tools
+          - pciutils
+        state: present
+
