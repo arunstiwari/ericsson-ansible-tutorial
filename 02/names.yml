@@ -1,7 +1,8 @@
 --- 
 - name: play with a {{ var_name }} 
-  hosts: localhost 
-  gather_facts: false 
+  hosts: dns 
+  gather_facts: true
+  
  
   vars: 
   - var_name: not-mastery 
@@ -16,8 +17,8 @@
       msg: "I am mastery task" 
  
 - name: second play with a {{ task_var_name }} 
-  hosts: localhost 
-  gather_facts: false 
+  hosts: dns 
+  gather_facts: true 
  
   tasks: 
   - name: task with a {{ runtime_var_name }} 

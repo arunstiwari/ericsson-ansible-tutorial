@@ -3,7 +3,7 @@
 2. ansible --version
 3. ansible localhost -m ping
 4. ansible localhost -a "uname -a" -u setup
-5. ansible localhost -m yum -a "name=git"  --become
+5. ansible localhost -m yum -a "name=git state=absent"  --become
 # Install the httpd service
 6. ansible localhost -m yum -a "name=httpd state=latest"  --become
 ## Verify the service using command which httpd

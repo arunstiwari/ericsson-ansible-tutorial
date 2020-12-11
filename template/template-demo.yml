@@ -5,7 +5,7 @@
   vars: 
     setting: a_val 
     feature: 
-      enabled: true
+      enabled: false
     another_setting: b_val  
   tasks: 
     - name: pause with render 
